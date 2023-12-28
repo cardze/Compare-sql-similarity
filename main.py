@@ -9,7 +9,6 @@ if __name__ == "__main__":
     for acc in range(0, len(result_histo)-1, 2):
         print("The acc is ", acc)
         group_dict = util.generate_group(result_histo, acc)
-        
         for k,v in group_dict.items():
-            print(k, v)
+            print(k, ', '.join(v), sep=",")
         
